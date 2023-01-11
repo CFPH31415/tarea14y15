@@ -1,0 +1,28 @@
+<div>
+    <div>
+        <div>{{titulo}}</div>
+    </div>
+    <hr>
+    <div>
+        <span>Event binding</span>
+        <div>
+            <button (click)="toggle()">{{ buttonName }}</button>
+        </div>
+        <div *ngIf="cambiador">
+            <p>
+                Event Binding, es el mecanismo de data binding mediante el cual trabaja con los eventos que se
+                encuentren en el DOM.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <span>Two way binding</span>
+        <div>
+            <p>{{textoInfo}}</p>
+        </div>
+        <div>
+            <textarea name="" id="" cols="50" rows="5" [(ngModel)]="textoInfo"></textarea>
+        </div>
+    </div>
+</div>
